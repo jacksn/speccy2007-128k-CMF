@@ -1,0 +1,166 @@
+                              1 ;--------------------------------------------------------
+                              2 ; File Created by SDCC : free open source ANSI-C Compiler
+                              3 ; Version 2.8.0 #5117 (Mar 23 2008) (MINGW32)
+                              4 ; This file was generated Sun Mar 20 21:54:52 2016
+                              5 ;--------------------------------------------------------
+                              6 	.module txtcore
+                              7 	.optsdcc -mz80
+                              8 	
+                              9 ;--------------------------------------------------------
+                             10 ; Public variables in this module
+                             11 ;--------------------------------------------------------
+                             12 	.globl _set_attr
+                             13 	.globl _text_out_pos_8
+                             14 ;--------------------------------------------------------
+                             15 ; special function registers
+                             16 ;--------------------------------------------------------
+                             17 ;--------------------------------------------------------
+                             18 ;  ram data
+                             19 ;--------------------------------------------------------
+                             20 	.area _DATA
+                             21 ;--------------------------------------------------------
+                             22 ; overlayable items in  ram 
+                             23 ;--------------------------------------------------------
+                             24 	.area _OVERLAY
+                             25 ;--------------------------------------------------------
+                             26 ; external initialized ram data
+                             27 ;--------------------------------------------------------
+                             28 ;--------------------------------------------------------
+                             29 ; global & static initialisations
+                             30 ;--------------------------------------------------------
+                             31 	.area _HOME
+                             32 	.area _GSINIT
+                             33 	.area _GSFINAL
+                             34 	.area _GSINIT
+                             35 ;--------------------------------------------------------
+                             36 ; Home
+                             37 ;--------------------------------------------------------
+                             38 	.area _HOME
+                             39 	.area _HOME
+                             40 ;--------------------------------------------------------
+                             41 ; code
+                             42 ;--------------------------------------------------------
+                             43 	.area _CODE
+                             44 ;txtcore.c:10: void set_attr( byte c, byte col, byte row, byte w )
+                             45 ;	genLabel
+                             46 ;	genFunction
+                             47 ;	---------------------------------
+                             48 ; Function set_attr
+                             49 ; ---------------------------------
+   0000                      50 _set_attr_start::
+   0000                      51 _set_attr:
+   0000 DD E5                52 	push	ix
+   0002 DD 21 00 00          53 	ld	ix,#0
+   0006 DD 39                54 	add	ix,sp
+                             55 ;txtcore.c:42: __endasm;
+                             56 ;	genInline
+                             57 	
+   0008 DD 6E 06             58 		ld l, 6( ix )
+   000B 26 00                59 		ld h, #0
+   000D 29                   60 		add hl, hl
+   000E 29                   61 		add hl, hl
+   000F 29                   62 		add hl, hl
+   0010 29                   63 		add hl, hl
+   0011 29                   64 		add hl, hl
+   0012 DD 5E 05             65 		ld e, 5( ix )
+   0015 16 00                66 		ld d, #0
+   0017 19                   67 		add hl, de
+   0018 3E 58                68 		ld a, #0x58
+   001A 84                   69 		add h
+   001B 67                   70 		ld h, a
+   001C E5                   71 		push hl
+   001D D1                   72 		pop de
+   001E 13                   73 		inc de
+   001F DD 7E 04             74 		ld a, 4( ix )
+   0022 77                   75 		ld( hl ), a
+   0023 DD 4E 07             76 		ld c, 7( ix )
+   0026 0D                   77 		dec c
+   0027 28 04                78 		jr z, skip
+   0029 06 00                79 		ld b, #0
+   002B ED B0                80 		ldir
+   002D                      81 	skip:
+                             82 		
+                             83 ;	genLabel
+                             84 ;	genEndFunction
+   002D DD E1                85 	pop	ix
+   002F C9                   86 	ret
+   0030                      87 _set_attr_end::
+                             88 ;txtcore.c:45: void text_out_pos_8( char *str, byte row, byte col, byte inv_mask, byte max_sz )
+                             89 ;	genLabel
+                             90 ;	genFunction
+                             91 ;	---------------------------------
+                             92 ; Function text_out_pos_8
+                             93 ; ---------------------------------
+   0030                      94 _text_out_pos_8_start::
+   0030                      95 _text_out_pos_8:
+   0030 DD E5                96 	push	ix
+   0032 DD 21 00 00          97 	ld	ix,#0
+   0036 DD 39                98 	add	ix,sp
+                             99 ;txtcore.c:110: __endasm;
+                            100 ;	genInline
+                            101 	
+   0038 DD 7E 07            102 		ld a, 7( ix )
+   003B 6F                  103 		ld l, a
+   003C E6 18               104 		and a, #0x18
+   003E 67                  105 		ld h, a
+   003F CB 25               106 		sla l
+   0041 CB 25               107 		sla l
+   0043 CB 25               108 		sla l
+   0045 CB 25               109 		sla l
+   0047 CB 25               110 		sla l
+   0049 01 00 40            111 		ld bc, #0x4000
+   004C 09                  112 		add hl, bc
+   004D DD 4E 06            113 		ld c, 6( ix )
+   0050 06 00               114 		ld b, #0
+   0052 09                  115 		add hl, bc
+                            116 	
+   0053 E5                  117 		push hl
+   0054 D1                  118 		pop de
+                            119 	
+   0055 DD 6E 04            120 		ld l, 4( ix )
+   0058 DD 66 05            121 		ld h, 5( ix )
+   005B                     122 	text_out_8_loop:
+   005B DD 7E 09            123 		ld a, 9( ix )
+   005E FE FF               124 		cp #0xff
+   0060 28 06               125 		jr z, to8_skip_sz
+   0062 B7                  126 		or a
+   0063 28 24               127 		jr z, text_out_8_end
+   0065 DD 35 09            128 		dec 9( ix )
+   0068                     129 	to8_skip_sz:
+   0068 7E                  130 		ld a, ( hl )
+   0069 B7                  131 		or a
+   006A 28 1D               132 		jr z, text_out_8_end
+                            133 	
+   006C E5                  134 		push hl
+                            135 	
+   006D 6F                  136 		ld l, a
+   006E 26 00               137 		ld h, #0
+   0070 29                  138 		add hl, hl
+   0071 29                  139 		add hl, hl
+   0072 29                  140 		add hl, hl
+   0073 01 00 3C            141 		ld bc, #0x3c00
+   0076 09                  142 		add hl, bc
+                            143 	
+   0077 06 08               144 		ld b, #8
+   0079 D5                  145 		push de
+   007A                     146 	to_8_tr_l:
+   007A 7E                  147 		ld a, ( hl )
+   007B DD AE 08            148 		xor 8( ix )
+   007E 12                  149 		ld( de ), a
+   007F 23                  150 		inc hl
+   0080 14                  151 		inc d
+   0081 10 F7               152 		djnz to_8_tr_l
+   0083 D1                  153 		pop de
+   0084 1C                  154 		inc e
+   0085 E1                  155 		pop hl
+   0086 23                  156 		inc hl
+   0087 18 D2               157 		jr text_out_8_loop
+   0089                     158 	text_out_8_end:
+                            159 		
+                            160 ;	genLabel
+                            161 ;	genEndFunction
+   0089 DD E1               162 	pop	ix
+   008B C9                  163 	ret
+   008C                     164 _text_out_pos_8_end::
+                            165 	.area _CODE
+                            166 	.area _CABS

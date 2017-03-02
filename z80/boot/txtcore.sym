@@ -1,0 +1,27 @@
+ASxxxx Assembler V01.75 + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+
+Symbol Table
+
+  0 _set_attr                                                      0000 GR
+  0 _set_attr_end                                                  0030 GR
+  0 _set_attr_start                                                0000 GR
+  0 _text_out_pos_8                                                0030 GR
+  0 _text_out_pos_8_end                                            008C GR
+  0 _text_out_pos_8_start                                          0030 GR
+  0 skip                                                           002D R
+  0 text_out_8_end                                                 0089 R
+  0 text_out_8_loop                                                005B R
+  0 to8_skip_sz                                                    0068 R
+  0 to_8_tr_l                                                      007A R
+
+ASxxxx Assembler V01.75 + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+
+Area Table
+
+   0 _CODE                                                          size   8C   flags 0
+   1 _DATA                                                          size    0   flags 0
+   2 _OVERLAY                                                       size    0   flags 0
+   3 _HOME                                                          size    0   flags 0
+   4 _GSINIT                                                        size    0   flags 0
+   5 _GSFINAL                                                       size    0   flags 0
+   6 _CABS                                                          size    0   flags 0

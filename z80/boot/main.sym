@@ -1,0 +1,192 @@
+ASxxxx Assembler V01.75 + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 1.
+
+Symbol Table
+
+    _KPORT                                                      =  00FE 
+    _KPORT0                                                     =  FEFE 
+    _KPORT1                                                     =  FDFE 
+    _KPORT2                                                     =  FBFE 
+    _KPORT3                                                     =  F7FE 
+    _KPORT4                                                     =  EFFE 
+    _KPORT5                                                     =  DFFE 
+    _KPORT6                                                     =  BFFE 
+    _KPORT7                                                     =  7FFE 
+    _MEMPORT                                                    =  7FFD 
+    _PPORT                                                      =  001F 
+    __divsint_rrx_s                                                **** GX
+    __initrleblock                                                 **** GX
+    __modsint_rrx_s                                                **** GX
+  0 __str_1                                                        0369 R
+  0 __str_10                                                       1069 R
+  0 __str_11                                                       106A R
+  0 __str_12                                                       107D R
+  0 __str_13                                                       1081 R
+  0 __str_14                                                       141C R
+  0 __str_15                                                       141D R
+  0 __str_16                                                       1421 R
+  0 __str_17                                                       168E R
+  0 __str_18                                                       1692 R
+  0 __str_2                                                        05C9 R
+  0 __str_20                                                       18D3 R
+  0 __str_21                                                       18D8 R
+  0 __str_22                                                       1938 R
+  0 __str_23                                                       25F4 R
+  0 __str_24                                                       25FD R
+  0 __str_25                                                       25FE R
+  0 __str_26                                                       2601 R
+  0 __str_27                                                       2603 R
+  0 __str_28                                                       2607 R
+  0 __str_29                                                       260B R
+  0 __str_30                                                       260F R
+  0 __str_31                                                       2613 R
+  0 __str_32                                                       2617 R
+  0 __str_33                                                       261B R
+  0 __str_34                                                       261F R
+  0 __str_35                                                       2628 R
+  0 __str_36                                                       262B R
+  0 __str_37                                                       2639 R
+  0 __str_38                                                       2646 R
+  0 __str_4                                                        06A4 R
+  0 __str_5                                                        093E R
+  0 __str_6                                                        0941 R
+  0 __str_7                                                        0942 R
+  0 __str_8                                                        094D R
+  0 __str_9                                                        0DC0 R
+  0 _calc_sel                                                      1425 GR
+  0 _calc_sel_end                                                  1516 GR
+  0 _calc_sel_start                                                1425 GR
+  0 _clrscr                                                        0DC3 GR
+  0 _clrscr_end                                                    0DDF GR
+  0 _clrscr_start                                                  0DC3 GR
+  1 _cmd                                                           3808 GR
+  1 _cmd_pos                                                       3821 GR
+  1 _code_table                                                    536A GR
+  0 _comp_name                                                     0958 GR
+  0 _comp_name_end                                                 0A0B GR
+  0 _comp_name_start                                               0958 GR
+  0 _display_fn                                                    155B GR
+  0 _display_fn_end                                                1615 GR
+  0 _display_fn_start                                              155B GR
+  0 _display_path                                                  05CB GR
+  0 _display_path_end                                              06A4 GR
+  0 _display_path_start                                            05CB GR
+  1 _files                                                         0000 GR
+  1 _files_sel                                                     3804 GR
+  1 _files_size                                                    3800 GR
+  1 _files_table_start                                             3802 GR
+  0 _get_dsk_name                                                  1615 GR
+  0 _get_dsk_name_end                                              168E GR
+  0 _get_dsk_name_start                                            1615 GR
+  0 _get_flags                                                     1697 GR
+  0 _get_flags_end                                                 16EA GR
+  0 _get_flags_start                                               1697 GR
+  0 _getcode                                                       0000 GR
+  0 _getcode_end                                                   0058 GR
+  0 _getcode_start                                                 0000 GR
+  0 _getkey                                                        01F2 GR
+  0 _getkey_end                                                    02AC GR
+  0 _getkey_start                                                  01F2 GR
+  0 _halt                                                          02AC GR
+  0 _halt_end                                                      02B6 GR
+  0 _halt_start                                                    02AC GR
+  0 _hide_sel                                                      1516 GR
+  0 _hide_sel_end                                                  152E GR
+  0 _hide_sel_start                                                1516 GR
+  0 _init_screen                                                   18DD GR
+  0 _init_screen_end                                               1938 GR
+  0 _init_screen_start                                             18DD GR
+  0 _input_box                                                     1084 GR
+  0 _input_box_end                                                 141C GR
+  0 _input_box_start                                               1084 GR
+  1 _key_last                                                      53EB GR
+  1 _key_pushed                                                    53EC GR
+  0 _main                                                          1959 GR
+  0 _main_end                                                      25F4 GR
+  0 _main_start                                                    1959 GR
+    _memcpy                                                        **** GX
+  1 _path                                                          3822 GR
+  0 _pport_close                                                   0544 GR
+  0 _pport_close_end                                               0564 GR
+  0 _pport_close_start                                             0544 GR
+  1 _pport_datasize                                                3865 GR
+  1 _pport_good                                                    3869 GR
+  0 _pport_open                                                    0507 GR
+  0 _pport_open_end                                                0544 GR
+  0 _pport_open_start                                              0507 GR
+  1 _pport_pktsize                                                 3867 GR
+  0 _pport_receive                                                 044F GR
+  0 _pport_receive_end                                             0507 GR
+  0 _pport_receive_start                                           044F GR
+  1 _pport_result                                                  3863 GR
+  0 _pport_send                                                    03B9 GR
+  0 _pport_send_data                                               0411 GR
+  0 _pport_send_data_end                                           044F GR
+  0 _pport_send_data_start                                         0411 GR
+  0 _pport_send_end                                                0411 GR
+  0 _pport_send_start                                              03B9 GR
+  0 _print_pad_8                                                   0564 GR
+  0 _print_pad_8_end                                               05C9 GR
+  0 _print_pad_8_start                                             0564 GR
+  0 _putbyte                                                       030D GR
+  0 _putbyte_end                                                   0369 GR
+  0 _putbyte_start                                                 030D GR
+  0 _putdig                                                        02B6 GR
+  0 _putdig_end                                                    030D GR
+  0 _putdig_start                                                  02B6 GR
+  0 _qsort                                                         0A9F GR
+  0 _qsort_end                                                     0BDE GR
+  0 _qsort_start                                                   0A9F GR
+  0 _read_dir                                                      0BDE GR
+  0 _read_dir_end                                                  0DC0 GR
+  0 _read_dir_start                                                0BDE GR
+  0 _readkey                                                       0058 GR
+  0 _readkey_end                                                   01F2 GR
+  0 _readkey_start                                                 0058 GR
+  1 _save_scr_buff                                                 386A GR
+  1 _selx                                                          3806 GR
+  1 _sely                                                          3807 GR
+    _set_attr                                                      **** GX
+  0 _show_sel                                                      152E GR
+  0 _show_sel_end                                                  155B GR
+  0 _show_sel_start                                                152E GR
+  0 _show_table                                                    06A8 GR
+  0 _show_table_end                                                093E GR
+  0 _show_table_start                                              06A8 GR
+  1 _sound_bit                                                     53EA GR
+    _strcat                                                        **** GX
+    _strcmp                                                        **** GX
+    _strcpy                                                        **** GX
+    _strlen                                                        **** GX
+  0 _strlwr                                                        036B GR
+  0 _strlwr_end                                                    0392 GR
+  0 _strlwr_start                                                  036B GR
+    _strncpy                                                       **** GX
+  0 _strupr                                                        0392 GR
+  0 _strupr_end                                                    03B9 GR
+  0 _strupr_start                                                  0392 GR
+  0 _swap_name                                                     0A0B GR
+  0 _swap_name_end                                                 0A9F GR
+  0 _swap_name_start                                               0A0B GR
+    _text_out_pos_8                                                **** GX
+  0 _update_disks                                                  16EA GR
+  0 _update_disks_end                                              18AD GR
+  0 _update_disks_start                                            16EA GR
+  0 _update_rom                                                    18AD GR
+  0 _update_rom_end                                                18D3 GR
+  0 _update_rom_start                                              18AD GR
+  0 _yes_or_no                                                     0DDF GR
+  0 _yes_or_no_end                                                 1069 GR
+  0 _yes_or_no_start                                               0DDF GR
+  0 loop                                                           02B3 R
+
+ASxxxx Assembler V01.75 + SDCC mods  (Zilog Z80 / Hitachi HD64180), page 2.
+
+Area Table
+
+   0 _CODE                                                          size 2648   flags 0
+   1 _DATA                                                          size 53ED   flags 0
+   2 _OVERLAY                                                       size    0   flags 0
+   3 _HOME                                                          size    0   flags 0
+   4 _GSINIT                                                        size   8A   flags 0
+   5 _GSFINAL                                                       size    0   flags 0
+   6 _CABS                                                          size    0   flags 0

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1197972606 source:d:\work\speccy2007_v106_(128+ay+trdos)\z80\trdos\crt0.s
+
+1240056076 source:d:\work\speccy2007_v106_(128+ay+trdos)\z80\trdos\txtcore.c
+	"txtcore.h"
+
+1240055954 d:\work\speccy2007_v106_(128+ay+trdos)\z80\trdos\txtcore.h
+	"types.h"
+
+1240055368 d:\work\speccy2007_v106_(128+ay+trdos)\z80\trdos\types.h
+
+1243969710 source:d:\work\speccy2007_v106_(128+ay+trdos)\z80\trdos\main.c
+	<string.h>
+
+1197969006 source:d:\my documents\dox\speccy\speccy 2007\speccy2007_v106r4_trd\z80\trdos\crt0.s
+

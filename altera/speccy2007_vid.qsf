@@ -1,0 +1,118 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Full Version
+# Date created = 11:04:43  April 10, 2009
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		speccy2007_vid_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX7000S
+set_global_assignment -name DEVICE "EPM7128SLC84-10"
+set_global_assignment -name TOP_LEVEL_ENTITY speccy2007_vid
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:04:43  APRIL 10, 2009"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name VHDL_FILE vhdl/speccy2007_vid.vhd
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_24 -to A14
+set_location_assignment PIN_25 -to A15
+set_location_assignment PIN_4 -to RD
+set_location_assignment PIN_5 -to ROM_CS
+set_location_assignment PIN_8 -to WR
+set_location_assignment PIN_83 -to CLK
+set_location_assignment PIN_16 -to M1
+set_location_assignment PIN_18 -to MREQ
+set_location_assignment PIN_20 -to IOREQ
+set_location_assignment PIN_21 -to INT
+set_location_assignment PIN_22 -to CLK_CPU
+set_location_assignment PIN_36 -to SYNC
+set_location_assignment PIN_6 -to AVR_NOINT
+set_global_assignment -name FMAX_REQUIREMENT "14 MHz" -section_id CLK
+set_instance_assignment -name CLOCK_SETTINGS CLK -to CLK
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_location_assignment PIN_9 -to AVR_INT
+set_location_assignment PIN_15 -to AVR_WAIT
+set_location_assignment PIN_77 -to AVR_TRDOS
+set_location_assignment PIN_12 -to TAPE_IN
+set_location_assignment PIN_75 -to RAM_A14
+set_location_assignment PIN_74 -to RAM_A15
+set_location_assignment PIN_73 -to RAM_A16
+set_location_assignment PIN_31 -to ROM_A14
+set_location_assignment PIN_37 -to ROM_A15
+set_location_assignment PIN_81 -to AY_BC1
+set_location_assignment PIN_80 -to AY_BDIR
+set_location_assignment PIN_79 -to AY_CLK
+set_location_assignment PIN_2 -to AVR_PROM
+set_location_assignment PIN_35 -to SPEAKER
+
+set_global_assignment -name FMAX_REQUIREMENT "14 MHz"
+set_global_assignment -name VECTOR_WAVEFORM_FILE speccy2007_clk.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE speccy2007_clk.vwf
+set_location_assignment PIN_11 -to nRD_BUF_EN
+set_global_assignment -name MAX7000_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_location_assignment PIN_27 -to nWR_GATE_EN
+set_location_assignment PIN_1 -to nCPU_Reset
+set_location_assignment PIN_10 -to nADR_GATE_EN
+set_location_assignment PIN_60 -to mA[13]
+set_location_assignment PIN_57 -to mA[12]
+set_location_assignment PIN_55 -to mA[11]
+set_location_assignment PIN_51 -to mA[10]
+set_location_assignment PIN_49 -to mA[9]
+set_location_assignment PIN_46 -to mA[8]
+set_location_assignment PIN_44 -to mA[7]
+set_location_assignment PIN_39 -to mA[6]
+set_location_assignment PIN_40 -to mA[5]
+set_location_assignment PIN_45 -to mA[4]
+set_location_assignment PIN_48 -to mA[3]
+set_location_assignment PIN_50 -to mA[2]
+set_location_assignment PIN_52 -to mA[1]
+set_location_assignment PIN_56 -to mA[0]
+set_location_assignment PIN_67 -to mD[7]
+set_location_assignment PIN_65 -to mD[6]
+set_location_assignment PIN_64 -to mD[5]
+set_location_assignment PIN_63 -to mD[4]
+set_location_assignment PIN_61 -to mD[3]
+set_location_assignment PIN_70 -to mD[2]
+set_location_assignment PIN_69 -to mD[1]
+set_location_assignment PIN_68 -to mD[0]
+set_location_assignment PIN_30 -to Red
+set_location_assignment PIN_33 -to Blue
+set_location_assignment PIN_34 -to Green
+set_location_assignment PIN_41 -to mWR
+set_location_assignment PIN_28 -to Bright
+set_location_assignment PIN_54 -to mRD
+set_location_assignment PIN_58 -to WR_BUF

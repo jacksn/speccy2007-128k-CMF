@@ -1,0 +1,15 @@
+XL
+H 6 areas 2 global symbols
+M crt0
+S _main Ref0000
+A _CODE size 7 flags 0
+A _GSINIT size 0 flags 0
+S gsinit Def0000
+A _GSFINAL size 1 flags 0
+A _DATA size 0 flags 0
+A _BSS size 0 flags 0
+A _HEAP size 0 flags 0
+T 00 00 F3 CD 00 00 C3 00 00
+R 00 00 00 00 00 04 01 00 02 07 00 00
+T 00 00 C9
+R 00 00 02 00

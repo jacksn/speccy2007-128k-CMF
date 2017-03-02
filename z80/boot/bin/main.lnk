@@ -1,0 +1,14 @@
+--
+-m
+-j
+-x
+-i .\bin\main
+-b _CODE = 0x8000
+-b _DATA = 0xac00
+-k D:\Prog\sdcc\bin\..\lib\z80
+-l z80
+main.o
+crt0.o
+txtcore.o
+
+-e

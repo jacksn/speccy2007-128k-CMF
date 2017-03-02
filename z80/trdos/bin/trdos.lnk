@@ -1,0 +1,14 @@
+--
+-m
+-j
+-x
+-i bin\trdos
+-b _CODE = 0x8000
+-b _DATA = 0xac00
+-k D:\Prog\sdcc\lib
+-k D:\Prog\sdcc\bin\..\lib\z80
+-l z80
+obj\crt0.rel
+obj\main.rel
+
+-e

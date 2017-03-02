@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1197972606 source:d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\crt0.s
+
+1240648442 source:d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\main.c
+	<string.h>
+	"main.h"
+	"pport.h"
+	"txtcore.h"
+
+1240055954 d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\main.h
+	"types.h"
+
+1240055368 d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\types.h
+
+1240055954 d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\pport.h
+
+1240055954 d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\txtcore.h
+	"types.h"
+
+1240056075 d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\txtcore.c
+	"txtcore.h"
+
+1240056076 source:d:\work\speccy2007_v105_(128+ay+trdos)\z80\boot\txtcore.c
+	"txtcore.h"
+
+1197972606 source:d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\crt0.s
+
+1240056076 source:d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\txtcore.c
+	"txtcore.h"
+
+1240055954 d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\txtcore.h
+	"types.h"
+
+1240055368 d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\types.h
+
+1241180321 source:d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\main.c
+	<string.h>
+	"main.h"
+	"pport.h"
+	"txtcore.h"
+
+1241181471 d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\main.h
+	"types.h"
+
+1240055954 d:\work\speccy2007_v106_(128+ay+trdos)\z80\boot\pport.h
+
+1197969006 source:d:\my documents\dox\speccy\speccy 2007\speccy2007_v106r4_trd\z80\boot\crt0.s
+
